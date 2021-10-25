@@ -1,0 +1,46 @@
+25/10/2021 03:27:46: RestSecurityUpdates.execute() - Sucesso ao tentar se comunicar com o rest da Microsoft Security Updates.
+
+25/10/2021 03:32:41 - Database.inicializaConexaoBanco() - Conectado com sucesso ao banco de dados.
+
+25/10/2021 03:32:58 - Database.inicializaConexaoBanco() - Conectado com sucesso ao banco de dados.
+
+25/10/2021 03:33:32 - Database.inicializaConexaoBanco() - Conectado com sucesso ao banco de dados.
+
+25/10/2021 03:33:41 - Database.inicializaConexaoBanco() - Conectado com sucesso ao banco de dados.
+
+25/10/2021 03:33:51 - Database.inicializaConexaoBanco() - Conectado com sucesso ao banco de dados.
+
+25/10/2021 03:33:53 - RestSecurityUpdates.execute() - Sucesso ao tentar se comunicar com o rest da Microsoft Security Updates.
+
+25/10/2021 03:33:53 - Database.inicializaConexaoBanco() - Conectado com sucesso ao banco de dados.
+
+25/10/2021 09:49:29 - Database.inicializaConexaoBanco() - Conectado com sucesso ao banco de dados.
+
+25/10/2021 09:49:29 - Database.inicializaConexaoBanco() - Conectado com sucesso ao banco de dados.
+
+25/10/2021 09:49:31 - RestSecurityUpdates.execute() - Sucesso ao tentar se comunicar com o rest da Microsoft Security Updates.
+
+25/10/2021 09:49:40 - Database.inicializaConexaoBanco() - Conectado com sucesso ao banco de dados.
+
+25/10/2021 09:49:40 - Database.inicializaConexaoBanco() - Conectado com sucesso ao banco de dados.
+
+25/10/2021 09:49:43 - Database.inicializaConexaoBanco() - Conectado com sucesso ao banco de dados.
+
+25/10/2021 09:49:43 - Database.inicializaConexaoBanco() - Conectado com sucesso ao banco de dados.
+
+25/10/2021 11:09:17 - Database.inicializaConexaoBanco() - Conectado com sucesso ao banco de dados.
+
+25/10/2021 11:09:17 - Database.inicializaConexaoBanco() - Conectado com sucesso ao banco de dados.
+
+25/10/2021 11:09:19 - RestSecurityUpdates.execute() - Sucesso ao tentar se comunicar com o rest da Microsoft Security Updates.
+
+25/10/2021 11:09:20 - Database.inicializaConexaoBanco() - Conectado com sucesso ao banco de dados.
+
+25/10/2021 11:14:18 - RestSecurityUpdates.execute() - Sucesso ao tentar se comunicar com o rest da Microsoft Security Updates.
+
+25/10/2021 11:19:22 - RestSecurityUpdates.execute() - Sucesso ao tentar se comunicar com o rest da Microsoft Security Updates.
+
+25/10/2021 11:24:19 - RestSecurityUpdates.execute() - Sucesso ao tentar se comunicar com o rest da Microsoft Security Updates.
+
+25/10/2021 11:29:18 - RestSecurityUpdates.execute() - Sucesso ao tentar se comunicar com o rest da Microsoft Security Updates.
+
