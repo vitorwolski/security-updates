@@ -14,17 +14,5 @@ export class HttpClientService {
 
   getSecurityUpdates(): Observable<any> {
     return this.http.get('http://localhost:64779');
-
-    //return this.http.get('https://jsonplaceholder.typicode.com/albums');
-
-    /*let asd:Observable<securityUpdates>;
-
-    asd = this.http.get('http://localhost:64779');
-
-    alert(asd);
-
-    alert('passei do get');
-
-    return asd;*/
   }
 }

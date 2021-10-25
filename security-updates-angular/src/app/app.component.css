@@ -1,0 +1,19 @@
+tr, td {
+    border: 1px solid black;
+}
+
+table {
+    width: 100%;
+}
+
+th.col-all {
+    width: 10%;
+}
+
+th.col-docTitle {
+    width: 20%;
+}
+
+th.col-cvrfUrl {
+    width: 30%;
+}

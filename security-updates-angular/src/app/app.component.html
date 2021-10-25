@@ -1,44 +1,55 @@
 <h1><strong>Microsoft Security Updates</strong></h1>
+
+<div>Para fazer a solicitação para o servidor, pressione o botão "Buscar Updates"</div>
+
+<br>
  
 <div>
-  <button type="button" (click)="getSecurityUpdates()">Get Updates</button>
+  <button type="button" (click)="getSecurityUpdates()">Buscar Updates</button>
 </div>
+
+<br>
+
+<div>A tabela pode ser filtrada pelas caixas de texto abaixo de cada cabeçalho de coluna</div>
 
 <br>
  
 <div *ngIf="loading">loading...</div>
 
-<!--<div>{{secUpds.id}}</div>-->
- 
-<!--<div *ngIf="errorMessage" class="alert alert-warning">
-  <strong>Warning!</strong> {{errorMessage | json}}
-</div>-->
- 
-
- 
-<table width=100%>
+<table>
   <thead>
     <tr>
-      <th>Id</th>
-      <th>Alias</th>
-      <th>Document Title</th>
-      <th>Severity</th>
-      <th>Initial Release Date</th>
-      <th>Current Release Date</th>
-      <th>CVRF URL</th>
+      <th class="col-all">Id</th>
+      <th class="col-all">Alias</th>
+      <th class="col-docTitle">Document Title</th>
+      <th class="col-all">Severity</th>
+      <th class="col-all">Initial Release Date</th>
+      <th class="col-all">Current Release Date</th>
+      <th class="col-cvrfUrl">CVRF URL</th>
+    </tr>
+    <tr>
+      <th><input type="text" (keyup)="getFilterId($event)" /></th>
+      <th><input type="text" (keyup)="getFilterAlias($event)" /></th>
+      <th><input size=47 type="text" (keyup)="getFilterDocumentTitle($event)" /></th>
+      <th><input type="text" (keyup)="getFilterSeverity($event)" /></th>
+      <th><input type="text" (keyup)="getFilterIniRlsDate($event)" /></th>
+      <th><input type="text" (keyup)="getFilterCurRlsDate($event)" /></th>
+      <th><input size=70 type="text" (keyup)="getFilterCvrfUrl($event)" /></th>
     </tr>
   </thead>
   <tbody>
-    <tr *ngFor="let sec of secUpds;">
-      <td>{{sec.id}}</td>
-      <td>{{sec.alias}}</td>
-      <td>{{sec.documentTitle}}</td>
-      <td>{{sec.severity}}</td>
-      <td>{{sec.iniRlsDate}}</td>
-      <td>{{sec.curRlsDate}}</td>
-      <td>{{sec.cvrfUrl}}</td>
-    </tr>
+    <ng-container *ngFor="let sec of secUpds;">
+      <tr *ngIf="(id == '' || sec.id == id) && (alias == '' || sec.alias == alias) && (documentTitle == '' || sec.documentTitle == documentTitle)
+      && (severity == '' || sec.severity == severity) && (iniRlsDate == '' || sec.iniRlsDate == iniRlsDate)
+      && (curRlsDate == '' || sec.curRlsDate == curRlsDate) && (cvrfUrl == '' || sec.cvrfUrl == cvrfUrl)" style="border: 1px solid black;">
+        <td>{{sec.id}}</td>
+        <td>{{sec.alias}}</td>
+        <td>{{sec.documentTitle}}</td>
+        <td>{{sec.severity}}</td>
+        <td>{{sec.iniRlsDate}}</td>
+        <td>{{sec.curRlsDate}}</td>
+        <td>{{sec.cvrfUrl}}</td>
+      </tr>
+    </ng-container>
   </tbody>
 </table>
-
-<!--<pre>{{secUpds | json}}</pre>-->
