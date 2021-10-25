@@ -15,18 +15,59 @@ export class AppComponent {
   constructor(private httpClientService: HttpClientService) {
   }
 
+  id:string = "";
+  alias:string = "";
+  documentTitle:string = "";
+  severity:string = "";
+  iniRlsDate:string = "";
+  curRlsDate:string = "";
+  cvrfUrl:string = "";
+
   secUpds: Array<securityUpdates> = [];
  
   loading: boolean = false;
-  errorMessage: string = "";
 
   resultado: string = "";
 
   subs: Subscription = new Subscription;
 
+  getFilterId(val:any)
+  {
+    this.id = val.target.value;
+  }
+
+  getFilterAlias(val:any)
+  {
+    this.alias = val.target.value;
+  }
+
+  getFilterDocumentTitle(val:any)
+  {
+    this.documentTitle = val.target.value;
+  }
+
+  getFilterSeverity(val:any)
+  {
+    this.severity = val.target.value;
+  }
+
+  getFilterIniRlsDate(val:any)
+  {
+    this.iniRlsDate = val.target.value;
+  }
+
+  getFilterCurRlsDate(val:any)
+  {
+    this.curRlsDate = val.target.value;
+  }
+
+  getFilterCvrfUrl(val:any)
+  {
+    this.cvrfUrl = val.target.value;
+  }
+
   public getSecurityUpdates() {
     this.loading = true;
-    this.errorMessage = "";
     
     this.subs = this.httpClientService.getSecurityUpdates().subscribe( (response) => {
       this.secUpds = response;
