@@ -1,0 +1,44 @@
+<h1><strong>Microsoft Security Updates</strong></h1>
+ 
+<div>
+  <button type="button" (click)="getSecurityUpdates()">Get Updates</button>
+</div>
+
+<br>
+ 
+<div *ngIf="loading">loading...</div>
+
+<!--<div>{{secUpds.id}}</div>-->
+ 
+<!--<div *ngIf="errorMessage" class="alert alert-warning">
+  <strong>Warning!</strong> {{errorMessage | json}}
+</div>-->
+ 
+
+ 
+<table width=100%>
+  <thead>
+    <tr>
+      <th>Id</th>
+      <th>Alias</th>
+      <th>Document Title</th>
+      <th>Severity</th>
+      <th>Initial Release Date</th>
+      <th>Current Release Date</th>
+      <th>CVRF URL</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let sec of secUpds;">
+      <td>{{sec.id}}</td>
+      <td>{{sec.alias}}</td>
+      <td>{{sec.documentTitle}}</td>
+      <td>{{sec.severity}}</td>
+      <td>{{sec.iniRlsDate}}</td>
+      <td>{{sec.curRlsDate}}</td>
+      <td>{{sec.cvrfUrl}}</td>
+    </tr>
+  </tbody>
+</table>
+
+<!--<pre>{{secUpds | json}}</pre>-->
